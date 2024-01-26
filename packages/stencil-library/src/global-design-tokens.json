@@ -1,0 +1,98 @@
+{
+  "color": {
+    "red": {
+      "900": "#B20015",
+      "500": "#D20019",
+      "100": "#FEF7F8"
+    },
+    "blue": {
+      "900": "#003C5F",
+      "500": "#008CBE",
+      "100": "#01C8F5",
+      "50": "#E0F8FE"
+    },
+    "orange": {
+      "900": "#D65A00",
+      "500": "#F57D38",
+      "100": "#FDEADF"
+    },
+    "salmon": {
+      "500": "#FF5541"
+    },
+    "neutral": {
+      "900": "#191919",
+      "600": "#717171",
+      "500": "#8F8F8F",
+      "400": "#969696",
+      "100": "#EBEBEB",
+      "50": "#F7F7F7",
+      "0": "#FFFFFF"
+    }
+  },
+  "typography": {
+    "display": {
+      "family": "\"Gotham Bold\" , \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "weight": {
+        "bold": "700"
+      },
+      "size": {
+        "xxl": "30px",
+        "xl": "22px",
+        "lg": "18px"
+      },
+      "lineHeight": {
+        "xxl": "120%",
+        "xl": "120%",
+        "lg": "120%"
+      }
+    },
+    "body": {
+      "family": "\"Gotham Book\" , \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "weight": {
+        "bold": "700",
+        "medium": "500",
+        "regular": "400",
+        "light": "300"
+      },
+      "size": {
+        "lg": "16px",
+        "md": "14px"
+      },
+      "lineHeight": {
+        "md": "160%",
+        "sm": "100%"
+      }
+    }
+  },
+  "spacing": {
+    "xxxs": "4px",
+    "xxs": "8px",
+    "xs": "12px",
+    "sm": "16px",
+    "md": "24px",
+    "lg": "32px",
+    "xl": "40px",
+    "xxl": "48px",
+    "xxxl": "64px",
+    "jumbo-l": "80px",
+    "jumbo-xl": "96px",
+    "jumbo-xxl": "128px",
+    "jumbo-xxxl": "160px"
+  },
+  "border-radius": {
+    "xs": "2px",
+    "sm": "4px",
+    "md": "8px"
+  },
+  "shadow": {
+    "sm": "0 2px 4px 0 #1919190A",
+    "lg": "0 12px 24px 0 #1919191F"
+  },
+  "breakpoints": {
+    "xs": "0px",
+    "sm": "600px",
+    "md": "900px",
+    "lg": "1440px",
+    "xl": "1980px"
+  }
+}

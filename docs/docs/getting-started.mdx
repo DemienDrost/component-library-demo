@@ -1,0 +1,95 @@
+---
+sidebar_position: 1
+title: 'Getting started'
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Installation
+
+To use 'Component Library'-components in your project, you need to run one of the following commands in your project:
+
+<Tabs>
+    <TabItem value="html" label="HTML">
+        ```
+        npm install @demiend/component-library
+        ```
+
+        After installing the component library, you need to add some resources to your site's `<head>`.
+
+
+        ```html
+        <html>
+            <head>
+                <!-- highlight-start -->
+                <link type="style" href="./node-modules/@demiend/component-library/dist/component-library-demo/component-library-demo.css" />
+                <script type="module">
+                    import { applyPolyfills, defineCustomElements } from './node-modules/@demiend/component-library/loader/index.js';
+
+                    applyPolyfills().then(() => {
+                        defineCustomElements(window, {
+                            resourcesUrl: '/',
+                        });
+                    });
+                </script>
+                <!-- highlight-end -->
+            </head>
+            <body>
+                <arcady-button></arcady-button>
+            </body>
+        </html>
+        ```
+    </TabItem>
+    <TabItem value="py" label="React">
+        ```
+        npm install @demiend/component-library-react
+        ```
+
+        After installation in your topmost JSX file - like `App.jsx` define the elements and add polyfills
+        ```jsx title="src/app.jsx"
+        (...)
+
+        import "@demiend/component-library/dist/stencil-library/stencil-library.css";
+        import { defineCustomElements } from "@demiend/component-library-react";
+
+        defineCustomElements();
+
+        function App() {
+            (...)
+        ```
+
+        Then use components in any component by importing them:
+
+        ```jsx
+        import { ArcadyButton } from "@demiend/component-library-react";
+
+        export default const myComponent = () => {
+            return (
+                <ArcadyButton>Click me</ArcadyButton>
+            );
+        }
+        ```
+    </TabItem>
+    <TabItem value="java" label="Vue">
+        ```
+        npm install @demiend/component-library-vue
+        ```
+
+        In your main.js file, import your component library plugin and use it:
+
+        ```js title="src/main.js"
+        import { ComponentLibrary } from "@demiend/component-library-vue";
+
+        createApp(App).use(ComponentLibrary).mount('#app');
+        ```
+
+        In your page or component, you can now import and use your component wrappers:
+
+        ```jsx
+        <template>
+            <arcady-button>Click here</arcady-button>
+        </template>
+        ```
+    </TabItem>
+</Tabs>

@@ -1,0 +1,29 @@
+{
+  "name": "@demiend/component-library-react",
+  "version": "0.0.6",
+  "description": "> TODO: description",
+  "author": "Demiën Drost <d.drost@arcady.nl>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/types/index.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "scripts": {
+    "test": "node ./__tests__/react-library.test.js",
+    "build": "npm run tsc",
+    "tsc": "tsc -p . --outDir ./dist"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@demiend/component-library": "*"
+  }
+}

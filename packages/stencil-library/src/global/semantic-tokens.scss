@@ -1,0 +1,29 @@
+:root {
+  // Colors
+  --arcady-s-color-primary: var(--arcady-g-color-red-500);
+  --arcady-s-color-on-primary: var(--arcady-g-color-neutral-50);
+
+  --arcady-s-color-primary-light: var(--arcady-g-color-red-100);
+  --arcady-s-color-on-primary-light: var(--arcady-g-color-red-500);
+
+  --arcady-s-color-primary-dark: var(--arcady-g-color-red-900);
+  --arcady-s-color-on-primary-dark: var(--arcady-g-color-neutral-50);
+
+  --arcady-s-color-secondary: var(--arcady-g-color-blue-500);
+  --arcady-s-color-on-secondary: var(--arcady-g-color-blue-50);
+
+  --arcady-s-color-secondary-light: var(--arcady-g-color-blue-100);
+  --arcady-s-color-on-secondary-light: var(--arcady-g-color-blue-50);
+
+  --arcady-s-color-secondary-dark: var(--arcady-g-color-blue-900);
+  --arcady-s-color-on-secondary-dark: var(--arcady-g-color-blue-50);
+
+  --arcady-s-color-surface-low: var(--arcady-g-color-neutral-100);
+  --arcady-s-color-on-surface-low: var(--arcady-g-color-neutral-900);
+  
+  --arcady-s-color-surface-middle: var(--arcady-g-color-neutral-50);
+  --arcady-s-color-on-surface-middle: var(--arcady-g-color-neutral-900);
+  
+  --arcady-s-color-surface-high: var(--arcady-g-color-neutral-0);
+  --arcady-s-color-on-surface-hight: var(--arcady-g-color-neutral-900);
+}

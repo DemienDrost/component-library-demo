@@ -1,0 +1,81 @@
+---
+sidebar_position: 1
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import CodeBlock from '@theme/CodeBlock';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Arcady button
+
+Button is used to catch the user's attention and initiate an action.
+
+## Preview
+
+<BrowserWindow>
+  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem' }}>
+    <arcady-button>This is a button</arcady-button>
+    <arcady-button variant="secondary">This is a button</arcady-button>
+    <arcady-button variant="ghost">This is a button</arcady-button>
+  </div>
+</BrowserWindow>
+
+## Usage
+
+<Tabs>
+    <TabItem value="js" label="HTML">
+        ```html
+        <arcady-button>This is a button</arcady-button>
+        ```
+    </TabItem>
+    <TabItem value="py" label="React">
+        ```jsx
+        import {ArcadyButton} from "@demiend/component-library-react"
+
+        // (...)
+
+        <ArcadyButton>This is a button</ArcadyButton>
+        ```
+    </TabItem>
+    <TabItem value="java" label="Vue">
+        ```jsx
+        <ArcadyButton>This is a button</ArcadyButton>
+        ```
+    </TabItem>
+
+</Tabs>
+
+## Props
+
+These are props specific to the `arcady-button` component:
+
+|`name`||
+|---|---|
+|**Description**:|The name of the button, submitted as a pair with the button's value as part of the form data, when that button is used to submit the form.|
+|**Type**:|```string```|
+|**Default**:|`undefined`|
+
+---
+
+|`variant`||
+|---|---|
+|**Description**:|Variant of the button - affects it's style|
+|**Type**:|```"primary" \| "secondary" \| "ghost"```|
+|**Default**:|`"primary"`|
+
+---
+
+|`type`||
+|---|---|
+|**Description**:|The default behavior of the button|
+|**Type**:|```"submit" \| "reset" \| "button"```|
+|**Default**:|`"button"`|
+
+---
+
+|`disabled`||
+|---|---|
+|**Description**:|If the button can be pressed or not|
+|**Type**:|```boolean```|
+|**Default**:|`false`|

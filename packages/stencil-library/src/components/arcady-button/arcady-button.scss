@@ -1,0 +1,62 @@
+:host {
+  > button {
+    // Component tokens.
+    --_arcady-button-color-background-default: var(--arcady-s-color-primary, #000000);
+    --_arcady-button-color-background-hover: var(--arcady-s-color-primary-light, #999999);
+
+    --_arcady-button-color-text-default: var(--arcady-s-color-on-primary, #ffffff);
+    --_arcady-button-color-text-hover: var(--arcady-s-color-on-primary-light, #ffffff);
+
+    --_arcady-button-color-border-default: transparent;
+
+    --_arcady-button-shadow-default: var(--arcady-g-shadow-sm, none);
+    --_arcady-button-shadow-hover: var(--arcady-g-shadow-lg, none);
+
+    // Variant tokens.
+    &[data-variant="secondary"] {
+      --_arcady-button-color-background-default: var(--arcady-s-color-secondary, #000000);
+      --_arcady-button-color-background-hover: var(--arcady-s-color-secondary-light, #999999);
+
+      --_arcady-button-color-text-default: var(--arcady-s-color-on-secondary, #ffffff);
+      --_arcady-button-color-text-hover: var(--arcady-s-color-on-secondary-light, #ffffff);
+    }
+
+    &[data-variant="ghost"] {
+      --_arcady-button-color-background-default: transparent;
+      --_arcady-button-color-background-hover: var(--arcady-s-color-primary, #000000);
+
+      --_arcady-button-color-text-default: var(--arcady-s-color-primary, #000000);
+      --_arcady-button-color-text-hover: var(--arcady-s-color-on-primary, #ffffff);
+
+      --_arcady-button-color-border-default: var(--arcady-s-color-primary, #000000);
+
+      --_arcady-button-shadow-default: none;
+      --_arcady-button-shadow-hover: var(--arcady-g-shadow-sm, none);
+    }
+
+    // Positioning and sizing.
+    display: inline-block;
+    padding-block: var(--arcady-g-spacing-xxs);
+    padding-inline: var(--arcady-g-spacing-xs);
+    border-radius: var(--arcady-g-border-radius-sm);
+
+    // Default button styles.
+    background: var(--_arcady-button-color-background-default);
+    color: var(--_arcady-button-color-text-default);
+
+    font-family: var(--arcady-g-typography-display-family);
+    font-weight: var(--arcady-g-typography-display-weight-bold);
+    min-width: var(--arcady-g-spacing-jumbo-xl);
+    box-shadow: var(--_arcady-button-shadow-default);
+    border: 2px solid var(--_arcady-button-color-border-default); 
+    cursor: pointer;
+
+    transition: background 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+    &:hover {
+      background: var(--_arcady-button-color-background-hover);
+      color: var(--_arcady-button-color-text-hover);
+      box-shadow: var(--_arcady-button-shadow-hover);
+    }
+  }
+}

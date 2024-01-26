@@ -1,0 +1,32 @@
+{
+  "name": "@demiend/component-library-vue",
+  "version": "0.0.6",
+  "description": "> TODO: description",
+  "author": "Demiën Drost <d.drost@arcady.nl>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "build": "npm run tsc",
+    "tsc": "tsc -p . --outDir ./dist"
+  },
+  "devDependencies": {
+    "vue": "^3.4.15"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@demiend/component-library": "^0.0.2",
+    "stencil-library": "*"
+  }
+}

@@ -1,0 +1,37 @@
+trigger:
+  branches:
+    include:
+      - main
+  paths:
+    include:
+      - docs
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+  - group: component-library-demo
+  - name: deploy_token
+    value: $(azure_web_static_components_demo_deployment_token)
+
+stages:
+- stage: PublishDocs
+  jobs:
+  - job: PublishDocs
+    steps:
+    - task: npmAuthenticate@0
+      inputs:
+        workingFile: ./docs/.npmrc
+      displayName: Authenticate with npm
+
+    - script: |
+        cd ./docs
+        npm install
+        npm run build
+      displayName: Build Docs
+
+    - task: AzureStaticWebApp@0
+      inputs:
+        app_location: ./docs/build
+        output_location: /output
+        azure_static_web_apps_api_token: $(deploy_token)
